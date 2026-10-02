@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Project</title>
+    <style>
+
+
+        html{
+            scroll-behavior: smooth;
+            scroll-padding-top: 60px;
+        }
+
+
+        header{
+            height: 50px;
+            background-color: rgb(249, 176, 241);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+
+
+        .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        footer{
+            height: 50px;
+            background-color: rgb(155, 237, 100);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        header p{
+            position: absolute;
+            right: 10px;
+        }
+
+        header img{
+            position: absolute;
+            left: 0px;
+        }
+
+        body{
+            background-color: rgb(35, 108, 23);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0px;
+        }
+
+        .special{
+            color: rgb(171, 108, 178);
+        }
+
+        .hero{
+            height: 200px;
+            background-color: rgb(64, 82, 43);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1{
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .hero h4{
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .banner{
+            background-color: rgb(98, 102, 0);
+            padding: 4px;
+            margin: 30px;
+            margin-bottom: 0px;
+            border-radius: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: larger;
+        }
+
+        .banner2{
+            background-color: rgb(255, 207, 253);
+            padding: 4px;
+            margin: 30px;
+            margin-top: 0px;
+            border-radius: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: larger;
+            scroll-margin-top: 0px;
+        }
+
+        .text{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+
+        .project{
+            display: flex;
+            margin-top: 5px;
+            align-items: center;
+            justify-content: center;
+        } 
+
+        .project-preview img {
+            width: 325px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 6px;
+            display: block;
+        }
+
+        form{
+            background-color: white;
+            border: 1px;
+            border-style: solid;
+            border-radius: 5px;
+            border-color: black;
+            padding: 7px;
+            width: 90%;
+            align-self: center;
+            margin: 30px auto;
+        }
+        
+        .button{
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+space
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <p><a href=#about>About Me</a> - <a href=#works>My Works</a> - <a href=#contact>Contact Me</a></p>
+    </header>
+
+    <div class="hero">
+        <img src="Veprim.png" alt="Veprim" width="100" style="border-radius: 15px;">
+        <h1>Hey, I'm <span class="special">Veprim</span></h1>
+        <h4>Aspiring Web Designer</h4>
+    </div>
+
+    <div class="banner" id="about">
+        <h3>About Me</h3>
+    </div> <br>
+
+    <div class="text">
+        <p>My name is Veprim and I am a student of OBMC and I create simple websites.</p>
+    </div>
+
+    <div class="banner" style="margin-bottom: 35px;" id="works">
+        <h3>My Works</h3>
+    </div>
+
+    <div class="project">
+        <div class="project-preview">
+            <img src="Mobile.png" alt="Mobile App">
+            <p class="caption">Mobile App Recommendations</p>
+        </div>
+
+        <ul class="project-details">
+            <li>HTML & CSS Projects</li> <br>
+            <li>Mobile App Recommendations</li> <br>
+            <li>Divs, Links, and Images</li> <br>
+        </ul>
+    </div>
+
+    <div class="project" style="padding-bottom: 0px;">
+        <div class="project-preview">
+            <img src="Movie.png" alt="Movie">
+            <p class="caption">My Rate a Movie Form</p>
+        </div>
+
+        <ul class="project-details">
+            <li>HTML & CSS Projects</li> <br>
+            <li>HTML Forms</li> <br>
+            <li>Movie Reccomendations</li> <br>
+        </ul>
+    </div>
+
+    <div class="banner2" id="contact">
+        <h3>Contact Me</h3>
+    </div>
+
+    <form class="contactme">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="John Doe"><br>
+
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="john_doe@gmail.com"><br>
+
+        <label>How did you find out about me?</label><br>
+            <input type="radio" id="discord" name="found">
+            <label for="discord">Facebook</label>
+
+            <input type="radio" id="google" name="found">
+            <label for="google">Instagram</label>
+
+            <input type="radio" id="friends" name="found">
+            <label for="friends">Family or Friends</label>
+        <br>
+
+        <label>Interested In:</label><br>
+            <input type="checkbox" id="web" name="interest" value="web">
+            <label for="web">Web Design</label>
+
+            <input type="checkbox" id="graphic" name="interest" value="graphic">
+            <label for="graphic">Graphic Design</label>
+
+            <input type="checkbox" id="robotics" name="interest" value="robotics">
+            <label for="robotics">Robotics</label>
+        <br>
+
+        <label for="rating">Rate my Portfolio</label><br>
+        <select id="rating" name="rating">
+            <option value="">-- Select Rating --</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Average</option>
+            <option value="2">2 - Poor</option>
+            <option value="1">1 - Very Poor</option>
+        </select><br><br>
+
+
+
+        <label for="feedback">Any Feedback?</label><br>
+        <textarea id="feedback" name="feedback" placeholder="Feedback here..." rows="5"></textarea><br><br>
+
+        <button type="submit" style="background-color: rgb(30 30 240); border-width: 2; width: 90%; height: 40px; text-align: center; border-radius: 4px; color: black;" class="button">Submit</button>
+    </form>
+
+    <br>
+    <br>
+
+
+    <footer>
+        Â© 2026 Veprim Dema
+    </footer>
+
+</body>
+</html>>
